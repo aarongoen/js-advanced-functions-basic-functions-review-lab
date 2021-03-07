@@ -8,9 +8,10 @@ function mondayWork(activity = 'go to the office') {
 }
 
 function wrapAdjective(visual_flair = '*') {
-    function innerFunction(param = 'special') {
-        return `You are ${param} ${visual_flair}`
-    }
+    return function innerFunction(param = 'special') {
+        return (`You are ${visual_flair}${param}${visual_flair}!`)
+        }
 }
 
-let encouragingPromptFunction = wrapAdjective('!!!')
+let calculator = 
+    { }
